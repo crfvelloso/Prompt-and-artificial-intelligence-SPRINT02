@@ -8,14 +8,14 @@ O desafio aborda a ausência de mecanismos integrados em eletropostos comerciais
 
 # Projeto: GoodWezinho
 O GoodWezinho é um chatbot feito e treinado para ser um assistente a um usuario que seja dono de um carro eletrico.
-Ele foi pensado para resolver o problema de falta de informação a respeito de carregadores eletricos (especialmente, os da GoodWe), conseguindo fornecer quanto custa para um "abastecimento" com base no veículo do usuario, onde ele pesquisa o modelo com base no nosso banco de dados, recebe o valor da capacidade da bateria, e faz uma conta simples de quanto custa e quanto tempo demoraria para carregar o carro, com base no carregador de 22KWh.
+Ele foi pensado para resolver o problema de falta de informação a respeito de carregadores eletricos (especialmente, os da GoodWe), conseguindo fornecer quanto custa para um "abastecimento" com base no veículo do usuario, onde ele pesquisa o modelo com base no nosso banco de dados, recebe o valor da capacidade da bateria, e faz uma conta simples de quanto custa e quanto tempo demoraria para carregar o carro, com base no carregador de 22KW, o mais potente da GoodWe!
 Ele tambem tem um banco de dados "imaginario" de locais com carregadores da GoodWe, como essa informação não é publica, nós adicionamos todos os shoppings da zona sul de São Paulo apenas para mostrar do que o GoodWezinho é capaz! Ele consegue calcular qual shopping é o mais proximo do seu local, para te informar! Futuramente, estes dados podem ser substituidos com as informações reais de onde tem carregadores da GoodWe.
 O GoodWezinho tambem tem informações de vendas dos carregadores da linha HCA G2, para caso o usuário tenha interesse em comprar um!
 
-Para o preço: colocamos uma taxa de R$: 2,00 para cada KWh carregado, levando em conta que essa taxa em carregadores comerciais gira em torno disso.
+Para o preço: colocamos uma taxa de R$: 0.50 para cada KWh carregado, levando em conta que essa taxa em carregadores comerciais gira em torno disso.
 Para o tempo: apenas uma conta simples para saber o tempo com base na bateria do carro.
 Para o Local: Ele pergunta onde o usuario está, e com base na resposta, pesquisa qual é o shopping no banco de dados dele mais proximo da localização fornecida.
-Para a venda do carregador: ele tem as informações do preço, modelo, e capacidade de carregamento dos 3 modelos disponiveis, e consegue te recomendar um com base no seu perfil.
+Para a venda do carregador: ele tem as informações do preço, modelo, e capacidade de carregamento dos 3 modelos disponiveis, e consegue te recomendar um com base no seu perfil. As informações são retiradas do proprio PDF da GoodWe sobre a linha HCA-G2, utilizando RAG
 
 Futuramente, queremos implementar duas funções: uma para saber se os carregadores estão em uso, e outra para saber quanto tempo falta para a carga completa do carro, o que é totalmente possivel no contexto de hoje!
 
